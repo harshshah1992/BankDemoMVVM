@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16B2659" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="58" id="KGk-i7-Jjw" customClass="Cell_BankList_tbl" customModule="BankDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="58"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="58"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S0z-Hy-2pq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="58"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BankLogo" translatesAutoresizingMaskIntoConstraints="NO" id="cIb-Xn-DAI" customClass="CLImageViewPopup" customModule="BankDemo" customModuleProvider="target">
+                                <rect key="frame" x="8" y="4" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="HVT-ey-48S"/>
+                                    <constraint firstAttribute="height" constant="50" id="uk6-Fe-LW1"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9jy-wE-cOA">
+                                <rect key="frame" x="69" y="8" width="243" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="42" id="Zyl-1J-g4l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cIb-Xn-DAI" firstAttribute="leading" secondItem="S0z-Hy-2pq" secondAttribute="leading" constant="8" id="0h1-UD-zLv"/>
+                            <constraint firstItem="9jy-wE-cOA" firstAttribute="leading" secondItem="cIb-Xn-DAI" secondAttribute="trailing" constant="11" id="C3F-pb-t6F"/>
+                            <constraint firstAttribute="trailing" secondItem="9jy-wE-cOA" secondAttribute="trailing" constant="8" id="H1H-0V-39b"/>
+                            <constraint firstItem="cIb-Xn-DAI" firstAttribute="centerY" secondItem="S0z-Hy-2pq" secondAttribute="centerY" id="HEB-2U-p8C"/>
+                            <constraint firstAttribute="bottom" secondItem="9jy-wE-cOA" secondAttribute="bottom" constant="8" id="J2L-P9-Oqd"/>
+                            <constraint firstItem="9jy-wE-cOA" firstAttribute="top" secondItem="S0z-Hy-2pq" secondAttribute="top" constant="8" id="urH-nk-FDe"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="S0z-Hy-2pq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Rig-Ud-jaY"/>
+                    <constraint firstAttribute="trailing" secondItem="S0z-Hy-2pq" secondAttribute="trailing" id="S1x-ra-qJu"/>
+                    <constraint firstAttribute="bottom" secondItem="S0z-Hy-2pq" secondAttribute="bottom" id="aym-Zt-V5N"/>
+                    <constraint firstItem="S0z-Hy-2pq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="tJG-N2-6pE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgLogo" destination="cIb-Xn-DAI" id="Rws-a0-C8T"/>
+                <outlet property="lblBankName" destination="9jy-wE-cOA" id="vL9-3B-EYF"/>
+                <outlet property="vwMain" destination="S0z-Hy-2pq" id="P3b-Ah-XhT"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="59"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="BankLogo" width="194" height="155"/>
+    </resources>
+</document>
